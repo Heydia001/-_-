@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06_table.html</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>길동</td>
+      <td>홍</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>감찬</td>
+      <td>강</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>관순</td>
+      <td>유</td>
+      <td>30</td>
+    </tr>
+  </table>
+  <hr />
+  <table>
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Telephone</th>
+    </tr>
+    <tr>
+      <td >김일남</td>
+      <td>010-1111-1111</td>
+      <td>051-333-3333</td>
+    </tr>
+    <tr>
+      <td>김이남</td>
+      <td>010-2222-2222</td>
+      <td>051-444-4444</td>
+    </tr>
+  </table>
+  <br />
+  <table>
+    <caption style="font-size: 20px; margin-bottom: 5px;">
+      2개의 row를 span
+    </caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <td>Bill Gates</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="2">Tel</th>
+        <td>010-1234-5678</td>
+      </tr>
+      <tr>
+        <td>010-2345-6789</td>
+      </tr>
+   </tbody>
+  </table>
+
+</body>
+</html>

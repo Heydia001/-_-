@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13_input</title>
+</head>
+<body>
+  <input type="button" value="Btn"/>
+  <br />
+  <form action="">
+    <h3>Button</h3>
+    <input type="button" value="Click Me" onclick="alert('Hello, World!')" />
+    <br />
+    <h3>Check Box</h3>
+    <input type="checkbox" name="fruit2" value="orange" checked />orange <br />
+    <input type="checkbox" name="fruit1" value="apple" />apple <br />
+    <input type="checkbox" name="fruit3" value="kiwi" />kiwi <br />
+    <h3>color</h3>
+    <input type="color" name="myColor" />
+    <h3>Date</h3>
+    <input type="date" name="birthday" />
+    <hr />
+    <h3>datetime-local</h3>
+    <input type="datetime-local" name="birthdaytime"/>
+    <hr />
+    <h3>E-mail</h3>
+    <input type="email" name="useremail"/>
+    <hr />
+    <h3>file</h3>
+    <input type="file" name="country" value="korea" />
+    <hr />
+    <h3>hidden</h3>
+    <input type="hidden" src="" name="hidden" />
+    <hr />
+    <h3>image</h3>
+    <input type="image" src="./images/doug.jpg" alt="submit">
+    <h3>month</h3>
+    <input type="month">
+    <hr />
+    <h3>number</h3>
+    <input type="number" min="2" max="10" step="2" value="0">
+    <hr />
+    <h3>password</h3>
+    <input type="password" name="password">
+    <hr />
+    <h3>radio</h3>
+    <!-- 1개만 선택이 가능하다. -->
+    <input type="radio" name="age" value="male" /> 남 <br />
+    <input type="radio" name="age" value="female" /> 어린이 <br />
+    <input type="radio" name="age" value="female" /> 여 <br />
+    <input type="radio" name="age" value="female" /> 유아 <br />
+    <input type="radio" name="age" value="female" /> 영아 <br />
+    <hr />
+    <h3>range</h3>
+    <input type="range" name="points" value="0" min="0" max="100" />
+    <h3>reset</h3>
+    <input type="reset" />
+    <h3>search</h3>
+    <input type="search" name="search" />
+    <h3>submit</h3>
+    <input type="submit">
+    <h3>tel</h3>
+    <input type="tel" name="mytel">
+    <h3>lable</h3>
+    <label for="inputName">이름</label>
+    <input type="text" id="inputName" name="inputName">
+    <!-- lable과 input을 한 덩어리로 연결 -->
+  </form>
+</body>
+</html>

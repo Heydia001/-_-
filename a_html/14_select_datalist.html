@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14_select_datalist.html</title>
+</head>
+<body>
+
+  <select name="cars1" onclick="getValue(this)"> 
+    <option value="volvo">volvo</option>
+    <option value="audi" disabled>audi</option>
+    <option value="fiat" selected>fiat</option>
+    <option value="saab">saab</option>
+  </select>
+
+  <script>
+    const getValue = (target) => {
+      console.log(target.value);
+    }
+  </script>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <select name="cars2" multiple> 
+    <option value="volvo">volvo</option>
+    <option value="audi" disabled>audi</option>
+    <option value="fiat" selected>fiat</option>
+    <option value="saab">saab</option>
+  </select>
+
+  <select name="cars3" multiple> 
+    <optgroup label="Swedish Cars">
+      <option value="volvo">volvo</option>
+      <option value="audi" disabled>audi</option>
+    </optgroup>
+    <optgroup label="German Cars">
+    <option value="fiat" selected>fiat</option>
+    <option value="saab">saab</option>
+    </optgroup>
+  </select>
+
+  <hr>
+
+  <input list="cities" placeholder="도시를 입력하시오.">
+  <datalist id="cities" >
+      <option value="서울">
+      <option value="대구"></option>
+      <option value="부산"></option>
+      <option value="울산"></option>
+      <option value="수원"></option>
+      <option value="광주"></option>
+      <option value="대전"></option>
+      <option value="양산"></option>
+    </datalist>
+
+
+</body>
+</html>
