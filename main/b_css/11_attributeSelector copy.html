@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div[class*="test"]{
+      color: red;
+    }
+    div[class~="test"]{
+      color: blue;
+      background-color: yellow;
+    }
+
+
+  </style>
+</head>
+<body>
+  <a href="https://www.naver.com">네이버</a>
+  <a href="https://www.test.com">테스트</a>
+  <div class="test">test</div>
+  <p class="test">p test</p>
+</body>
+</html>
